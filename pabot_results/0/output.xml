@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on darwin)" generated="20230327 18:59:15.944" rpa="false" schemaversion="3">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC1" source="/Users/adammoreau/SDET/TestCases/TC1.robot">
+<test id="s1-s1-t1" name="skip LoginTest" line="14">
+<kw name="Start Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>About:Blanck</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230327 18:59:16.185" level="INFO">Opening browser 'chrome' to base url 'About:Blanck'.</msg>
+<status status="PASS" starttime="20230327 18:59:16.184" endtime="20230327 18:59:19.946"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230327 18:59:19.949" endtime="20230327 18:59:20.150"/>
+</kw>
+<status status="PASS" starttime="20230327 18:59:16.184" endtime="20230327 18:59:20.151"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL.${env}}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230327 18:59:20.153" level="INFO">Opening url 'https://demo.nopcommerce.com'</msg>
+<status status="PASS" starttime="20230327 18:59:20.151" endtime="20230327 18:59:20.570"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230327 18:59:20.574" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<msg timestamp="20230327 18:59:21.335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230327 18:59:21.336" level="FAIL">Link with locator 'xpath://a[@class='ico-login']' not found.</msg>
+<status status="FAIL" starttime="20230327 18:59:20.571" endtime="20230327 18:59:21.341"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230327 18:59:21.341" endtime="20230327 18:59:21.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230327 18:59:21.342" endtime="20230327 18:59:21.342"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230327 18:59:21.342" endtime="20230327 18:59:21.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230327 18:59:21.343" endtime="20230327 18:59:21.343"/>
+</kw>
+<kw name="End Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230327 18:59:21.344" endtime="20230327 18:59:21.423"/>
+</kw>
+<status status="PASS" starttime="20230327 18:59:21.344" endtime="20230327 18:59:21.423"/>
+</kw>
+<status status="FAIL" starttime="20230327 18:59:16.183" endtime="20230327 18:59:21.423">Link with locator 'xpath://a[@class='ico-login']' not found.</status>
+</test>
+<status status="FAIL" starttime="20230327 18:59:15.970" endtime="20230327 18:59:21.425"/>
+</suite>
+<status status="FAIL" starttime="20230327 18:59:15.952" endtime="20230327 18:59:21.426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC1">Suites.TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
